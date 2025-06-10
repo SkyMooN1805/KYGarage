@@ -1,0 +1,1 @@
+<form action="contact.php" method="POST">

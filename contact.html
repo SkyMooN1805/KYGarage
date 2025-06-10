@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>İletişim – KYGarage</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    body, body * { color: #144969 !important; }
+    footer p { color: #ffffff !important; }
+    .mechanical { font-family: 'Orbitron', sans-serif; text-transform: uppercase; letter-spacing: 0.1em; }
+  </style>
+</head>
+<body class="bg-gray-100 font-sans">
+
+  <!-- Header -->
+  <header class="bg-white shadow">
+    <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+      <div class="flex items-center space-x-3 bg-white p-2 rounded">
+        <img src="assets/logo.png" alt="KYGarage Logo" class="h-12 w-12 object-contain">
+        <h1 class="text-3xl mechanical">KYGarage</h1>
+      </div>
+      <nav class="space-x-6">
+        <a href="index.html" class="text-[#144969] hover:underline">Ana Sayfa</a>
+        <a href="contact.html" class="text-[#144969] hover:underline">İletişim</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- İletişim Formu -->
+  <section class="container mx-auto px-4 py-16 bg-white">
+    <h2 class="text-3xl font-semibold text-center mb-6">Bizimle İletişime Geçin</h2>
+    <!-- WhatsApp Destek Hattı -->
+    <div class="flex justify-center mb-8">
+      <a 
+        href="https://wa.me/905550593879?text=Merhaba%2C%20KYGarage%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum" 
+        target="_blank"
+        class="flex items-center space-x-3 bg-gradient-to-r from-green-400 to-green-600 hover:from-green-500 hover:to-green-700 text-white font-semibold px-6 py-3 rounded-full shadow-lg transition transform hover:scale-105"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M20.52 3.478A11.946 11.946 0 0012.003 0c-6.627 0-12 5.373-12 12 0 2.116.553 4.174 1.603 6.012L0 24l6.324-1.65A11.99 11.99 0 0012.003 24c6.627 0 12-5.373 12-12 0-3.204-1.246-6.217-3.483-8.522zm-8.517 18.213c-1.96 0-3.886-.523-5.554-1.51l-.397-.232-3.75.979.999-3.648-.257-.416a9.988 9.988 0 01-1.527-5.368c0-5.514 4.49-10 10.017-10s10.017 4.486 10.017 10c0 5.517-4.49 10.003-10.017 10.003zm5.496-7.452c-.301-.151-1.783-.88-2.059-.98-.276-.101-.477-.151-.678.15-.201.301-.778.98-.953 1.18-.175.201-.351.226-.652.075-.301-.151-1.276-.469-2.43-1.496-.9-.803-1.508-1.796-1.683-2.097-.175-.301-.019-.463.132-.614.136-.135.301-.351.452-.526.151-.175.201-.301.301-.502.101-.201.05-.376-.025-.526-.075-.151-.678-1.635-.93-2.245-.246-.592-.497-.513-.678-.513h-.578c-.201 0-.526.075-.801.351s-1.051 1.026-1.051 2.501 1.076 2.893 1.226 3.096c.151.201 2.122 3.24 5.141 4.539.719.31 1.279.495 1.718.634.722.229 1.379.197 1.898.12.579-.085 1.783-.727 2.035-1.43.251-.703.251-1.306.176-1.43-.075-.125-.276-.201-.577-.352z"/>
+        </svg>
+        <span>WhatsApp ile Destek</span>
+      </a>
+    </div>
+    <form action="contact.php" method="POST" class="max-w-xl mx-auto space-y-6">
+      <div>
+        <label for="name" class="block mb-2 font-medium">Adınız Soyadınız</label>
+        <input type="text" id="name" name="name" required class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#EE7117]">
+      </div>
+      <div>
+        <label for="email" class="block mb-2 font-medium">E-posta Adresiniz</label>
+        <input type="email" id="email" name="email" required class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#EE7117]">
+      </div>
+      <div>
+        <label for="subject" class="block mb-2 font-medium">Konu</label>
+        <input type="text" id="subject" name="subject" required class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#EE7117]">
+      </div>
+      <div>
+        <label for="message" class="block mb-2 font-medium">Mesajınız</label>
+        <textarea id="message" name="message" rows="5" required class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#EE7117]"></textarea>
+      </div>
+      <div class="text-center">
+        <button type="submit" class="bg-[#EE7117] text-white px-6 py-2 rounded hover:bg-[#D65A0E] transition">Gönder</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 py-6 mt-10">
+    <div class="container mx-auto px-4 text-center">
+      <p class="text-sm text-white">&copy; 2025 KYGarage. Tüm hakları saklıdır.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
